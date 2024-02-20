@@ -1,0 +1,20 @@
+@import "/src/stylesVariables.scss";
+
+.hero {
+  @include desktopMaxWidth;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 66px;
+  padding-top: 120px;
+  padding-bottom: 196px;
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 64px;
+  }
+}
+
+.content {
+}

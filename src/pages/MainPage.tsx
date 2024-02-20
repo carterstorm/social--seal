@@ -1,3 +1,5 @@
+import { HeroSection } from "../ui/HeroSection/HeroSection";
+
 export default function MainPage() {
-  return <div>MainPage</div>;
+  return <HeroSection />;
 }
