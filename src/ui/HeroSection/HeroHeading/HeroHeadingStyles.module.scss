@@ -1,3 +1,5 @@
+@import "/src/stylesVariables.scss";
+
 .heroTitle {
   display: flex;
   flex-direction: column;
@@ -6,4 +8,14 @@
   color: #2a2a2a;
   text-align: left;
   margin: 32px 0;
+
+  @media (max-width: $media1230) {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  @media (max-width: $media976) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }

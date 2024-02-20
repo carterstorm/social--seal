@@ -1,3 +1,5 @@
+@import "/src/stylesVariables.scss";
+
 .heroSubTitle {
   display: inline-block;
   font-size: 18px;
@@ -8,6 +10,10 @@
   color: #fff1e7;
   border-radius: 32px;
   margin: 0;
+
+  @media (max-width: $media976) {
+    font-size: 14px;
+  }
 
   &__span {
     color: #fff;
