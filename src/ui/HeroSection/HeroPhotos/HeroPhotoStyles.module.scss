@@ -1,0 +1,37 @@
+@import "/src/stylesVariables.scss";
+
+.heroPhotos {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  grid-template-areas:
+    "square1 rectangle"
+    "square2 rectangle";
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__square1 {
+    background-image: url("/heroPhoto_1.png");
+    grid-area: square1;
+    aspect-ratio: 1/1;
+  }
+
+  &__square2 {
+    background-image: url("/heroPhoto_2.png");
+    grid-area: square2;
+    aspect-ratio: 1/1;
+  }
+
+  &__rectangle {
+    background-image: url("/heroPhoto_3.png");
+    grid-area: rectangle;
+    border-radius: 20px;
+    width: 100%;
+  }
+}
