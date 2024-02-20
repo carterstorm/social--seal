@@ -26,6 +26,12 @@
     margin-top: 16px;
   }
 
+  @media (max-width: $media567) {
+    font-size: 36px;
+    line-height: 38px;
+    margin-top: 41px;
+  }
+
   &__span:nth-last-child(2) {
     margin: 16px 0;
   }

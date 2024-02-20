@@ -35,9 +35,7 @@ export function HeroSection() {
       <HeroPhotos />
       <HeroTabletContainer>
         <SocialButtons />
-        <Buttons>
-          <ButtonLink title="View Our Plans" path={toMain()} />
-        </Buttons>
+        <ButtonLink title="View Our Plans" path={toMain()} />
       </HeroTabletContainer>
     </section>
   );
