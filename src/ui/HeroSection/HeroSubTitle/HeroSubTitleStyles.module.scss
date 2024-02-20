@@ -1,0 +1,15 @@
+.heroSubTitle {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 12px 24px;
+  background-color: #f79d5a;
+  color: #fff1e7;
+  border-radius: 32px;
+  margin: 0;
+
+  &__span {
+    color: #fff;
+  }
+}
