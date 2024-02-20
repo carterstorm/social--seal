@@ -1,7 +1,13 @@
 @mixin desktopMaxWidth {
   max-width: 1230px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (max-width: $media976) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 $media1230: 1230px;

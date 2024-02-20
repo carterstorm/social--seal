@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import HeroSubTitleStyles from "./HeroSubTitleStyles.module.scss";
+import HeroSubTitleStyles from "./heroSubTitleStyles.module.scss";
 
 export function HeroSubTitle() {
   return (

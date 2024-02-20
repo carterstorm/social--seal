@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import HeroHeadingStyles from "./HeroHeadingStyles.module.scss";
+import HeroHeadingStyles from "./heroHeadingStyles.module.scss";
 
 export function HeroHeading() {
   return (

@@ -1,5 +1,10 @@
 @import "/src/stylesVariables.scss";
 
+.heroPhotosContainer {
+  display: flex;
+  align-items: center;
+}
+
 .heroPhotos {
   width: 100%;
   display: grid;
@@ -9,6 +14,12 @@
     "square2 rectangle";
   grid-template-columns: 1fr 1.2fr;
   gap: 16px;
+
+  @media (max-width: $media768) {
+    grid-template-columns: minmax(0, 256px) minmax(0, 280px);
+    justify-content: center;
+    padding: 0 15px;
+  }
 }
 
 .card {

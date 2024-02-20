@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import ButtonsStyles from "./ButtonsStyles.module.scss";
+import ButtonsStyles from "./buttonsStyles.module.scss";
 
 type ButtonLinkProps = {
   title: string;

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import HeroPhotoStyles from "./HeroPhotoStyles.module.scss";
+import HeroPhotoStyles from "./heroPhotoStyles.module.scss";
 
 type CardProps = {
   className?: string;

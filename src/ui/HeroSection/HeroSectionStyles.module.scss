@@ -12,6 +12,12 @@
     column-gap: 25px;
   }
 
+  @media (max-width: $media768) {
+    padding-top: 152px;
+    padding-bottom: 147px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   &__article {
     display: flex;
     flex-direction: column;
@@ -21,4 +27,10 @@
 }
 
 .content {
+  @media (max-width: $media768) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
 }
