@@ -1,0 +1,32 @@
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.buttonLink {
+  color: white;
+  background-color: #3482ff;
+  padding: 28px 55px;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 16px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+
+  &--transparent {
+    color: #3482ff;
+    background: none;
+
+    &:hover {
+      background-color: #3482ff;
+      color: white;
+    }
+  }
+}
