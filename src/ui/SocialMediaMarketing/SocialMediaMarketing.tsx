@@ -30,12 +30,31 @@ export const SocialMediaMarketing = () => {
               <p className={sectionParagraphsStyles.container__paragraph}>
                 Social Media is more than just posting and showing off how many
                 followers you have. It's a valuable addition to your marketing
-                strategy that builds trust and creates connections with
-                potential customers to drive sales and increase your revenue.
+                strategy that{" "}
+                <em className={sectionParagraphsStyles.container__emphasis}>
+                  builds trust
+                </em>{" "}
+                and{" "}
+                <em className={sectionParagraphsStyles.container__emphasis}>
+                  creates connections
+                </em>{" "}
+                with potential customers to{" "}
+                <em className={sectionParagraphsStyles.container__emphasis}>
+                  drive sales
+                </em>{" "}
+                and{" "}
+                <em className={sectionParagraphsStyles.container__emphasis}>
+                  increase your revenue
+                </em>
+                .
               </p>
               <p className={sectionParagraphsStyles.container__paragraph}>
                 Save your time and money by partnering with us and start seeing
-                results that give you the highest return on investment.
+                results that give you the{" "}
+                <em className={sectionParagraphsStyles.container__emphasis}>
+                  highest return on investment
+                </em>
+                .
               </p>
               <p className={sectionParagraphsStyles.container__paragraph}>
                 After all; when you grow, we grow together.

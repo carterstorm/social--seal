@@ -22,4 +22,12 @@
   &__paragraph {
     margin: 0;
   }
+
+  &__emphasis {
+    font-style: normal;
+
+    @media (max-width: $media390) {
+      text-decoration: underline;
+    }
+  }
 }
