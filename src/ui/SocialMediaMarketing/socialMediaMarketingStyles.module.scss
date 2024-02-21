@@ -12,6 +12,10 @@
   padding-top: 195px;
   padding-bottom: 112px;
 
+  @media (max-width: $media1230) {
+    column-gap: 20px;
+  }
+
   &__article {
     display: flex;
     flex-direction: column;

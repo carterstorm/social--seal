@@ -2,15 +2,15 @@ import classNames from "classnames";
 import sectionHeadingStyles from "./sectionHeadingStyles.module.scss";
 
 export const SectionHeading = ({
-  headingText,
+  children,
   className,
 }: {
-  headingText: string;
+  children: React.ReactNode;
   className?: string;
 }) => {
   return (
     <h3 className={classNames(sectionHeadingStyles.heading, className)}>
-      {headingText}
+      {children}
     </h3>
   );
 };

@@ -21,9 +21,9 @@ export const SocialMediaMarketing = () => {
               className={sectionTitleStyles["title--socialMarketing"]}
             />
             <SectionHeading
-              headingText="Building Brands Creating Connections Driving Sales"
-              className={sectionHeadingStyles["heading--socialMarketing"]}
-            />
+              className={sectionHeadingStyles["heading--socialMarketing"]}>
+              Building Brands <br /> Creating Connections <br /> Driving Sales
+            </SectionHeading>
             <SectionParagraphs
               className={sectionParagraphsStyles["container--socialMarketing"]}>
               <p className={sectionParagraphsStyles.container__paragraph}>

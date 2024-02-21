@@ -1,3 +1,5 @@
+@import "/src/stylesVariables.scss";
+
 .heading {
   font-size: 50px;
   font-weight: 700;
@@ -8,5 +10,15 @@
   &--socialMarketing {
     color: #fff;
     max-width: 565px;
+
+    @media (max-width: $media976) {
+      font-size: 38px;
+      line-height: 54px;
+    }
+
+    @media (max-width: $media840) {
+      font-size: 30px;
+      line-height: 46px;
+    }
   }
 }
