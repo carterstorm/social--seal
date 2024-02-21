@@ -5,6 +5,8 @@ import LinkedInSvg from "./assets/linkedin_svg.svg";
 import GoogleSvg from "./assets/google_svg.svg";
 import TwitterSvg from "./assets/twitter_svg.svg";
 
+// ----------------- Hero -----------------
+
 export const socials = [
   {
     id: 1,
@@ -36,4 +38,13 @@ export const socials = [
     socialImage: YoutubeSvg,
     path: "https://www.youtube.com/",
   },
+];
+
+// ----------------- Social Marketing -----------------
+
+export const marketingCardsData = [
+  { id: 1, title: "offices", number: 100 },
+  { id: 2, title: "workers", number: 10 },
+  { id: 3, title: "customers", number: 15 },
+  { id: 4, title: "projects", number: 1300 },
 ];

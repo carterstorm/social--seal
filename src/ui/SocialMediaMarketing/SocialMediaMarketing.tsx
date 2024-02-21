@@ -8,6 +8,7 @@ import { SectionHeading } from "../SectionHeading/SectionHeading";
 import { SectionParagraphs } from "../SectionParagraphs/SectionParagraphs";
 import { ButtonLink, Buttons } from "../Buttons/Buttons";
 import { toMain } from "../../routes";
+import { MarketingCards } from "./MarketingCards";
 
 export const SocialMediaMarketing = () => {
   return (
@@ -49,6 +50,7 @@ export const SocialMediaMarketing = () => {
             />
           </Buttons>
         </article>
+        <MarketingCards />
       </section>
     </div>
   );

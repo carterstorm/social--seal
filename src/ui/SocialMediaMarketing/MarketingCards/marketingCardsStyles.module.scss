@@ -1,0 +1,116 @@
+@import "/src/stylesVariables.scss";
+
+.cardContainer {
+  display: grid;
+  grid-template-areas:
+    "offices workers"
+    "customers projects";
+  grid-template-columns: repeat(2, minmax(150px, 250px));
+  grid-template-rows: repeat(2, 250px);
+  gap: 30px;
+  margin-right: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    row-gap: 19px;
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+
+    &--officesColor {
+      color: #f76766;
+    }
+    &--customersColor {
+      color: #57c0ce;
+    }
+    &--workersColor {
+      color: #265fdb;
+    }
+    &--projectsColor {
+      color: #a666f7;
+    }
+  }
+
+  &__title {
+    color: #6b645d;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 1;
+    bottom: -6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--offices {
+      width: 141px;
+      height: 140px;
+      left: -11px;
+      background-image: url("/card_offices.png");
+    }
+
+    &--customers {
+      width: 139px;
+      height: 140px;
+      left: -11px;
+      background-image: url("/card_customers.png");
+    }
+
+    &--workers {
+      width: 122px;
+      height: 148px;
+      right: -31px;
+      background-image: url("/card_workers.png");
+    }
+
+    &--projects {
+      width: 118px;
+      height: 142px;
+      left: -11px;
+      background-image: url("/card_projects.png");
+    }
+  }
+}
+
+.offices {
+  transform: translateY(80px);
+  grid-area: offices;
+}
+
+.customers {
+  transform: translateY(80px);
+  grid-area: customers;
+}
+
+.workers {
+  grid-area: workers;
+}
+
+.projects {
+  grid-area: projects;
+}
