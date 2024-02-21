@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 19px;
+  line-height: 32px;
+  color: #727272;
+  font-weight: 200;
+
+  &--socialMarketing {
+    color: #bbb;
+    font-size: 18px;
+    max-width: 600px;
+  }
+
+  &__paragraph {
+    margin: 0;
+  }
+}
