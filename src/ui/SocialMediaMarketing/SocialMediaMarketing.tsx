@@ -9,6 +9,7 @@ import { SectionParagraphs } from "../SectionParagraphs/SectionParagraphs";
 import { ButtonLink, Buttons } from "../Buttons/Buttons";
 import { toMain } from "../../routes";
 import { MarketingCards } from "./MarketingCards";
+import classNames from "classnames";
 
 export const SocialMediaMarketing = () => {
   return (
@@ -41,12 +42,19 @@ export const SocialMediaMarketing = () => {
               </p>
             </SectionParagraphs>
           </div>
-          <Buttons>
-            <ButtonLink title="Contact us" path={toMain()} />
+          <Buttons className={buttonsStyles["buttons--socialMarketing"]}>
+            <ButtonLink
+              title="Contact us"
+              path={toMain()}
+              className={buttonsStyles["buttonLink--socialMarketing"]}
+            />
             <ButtonLink
               title="How Can We Help"
               path={toMain()}
-              className={buttonsStyles["buttonLink--transparent"]}
+              className={classNames(
+                buttonsStyles["buttonLink--transparent"],
+                buttonsStyles["buttonLink--socialMarketing"]
+              )}
             />
           </Buttons>
         </article>

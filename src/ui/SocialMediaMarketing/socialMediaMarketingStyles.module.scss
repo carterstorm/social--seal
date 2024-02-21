@@ -22,6 +22,11 @@
     padding-bottom: 250px;
   }
 
+  @media (max-width: $media390) {
+    padding-top: 145px;
+    padding-bottom: 80px;
+  }
+
   &__article {
     display: flex;
     flex-direction: column;
@@ -29,6 +34,10 @@
 
     @media (max-width: $media768) {
       align-items: center;
+    }
+
+    @media (max-width: $media390) {
+      gap: 16px;
     }
   }
 }

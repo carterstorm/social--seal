@@ -3,6 +3,16 @@
 .buttons {
   display: flex;
   gap: 12px;
+
+  &--socialMarketing {
+    @media (max-width: $media450) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $media390) {
+      width: 100%;
+    }
+  }
 }
 
 .buttonLink {
@@ -47,6 +57,12 @@
     &:hover {
       background-color: #3482ff;
       color: white;
+    }
+  }
+
+  &--socialMarketing {
+    @media (max-width: $media567) {
+      padding: 28px 38px;
     }
   }
 }

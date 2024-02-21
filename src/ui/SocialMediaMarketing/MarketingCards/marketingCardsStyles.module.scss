@@ -20,6 +20,19 @@
     margin-top: 50px;
     padding: 0 15px;
   }
+
+  @media (max-width: $media390) {
+    padding: 0;
+    margin-top: 40px;
+    grid-template-columns: minmax(0, 220px);
+    grid-template-rows: repeat(4, 220px);
+    gap: 25px;
+    grid-template-areas:
+      "offices"
+      "workers"
+      "customers"
+      "projects";
+  }
 }
 
 .card {
@@ -143,6 +156,10 @@
   @media (max-width: $media768) {
     transform: translateY(80px);
   }
+
+  @media (max-width: $media390) {
+    transform: translateY(0);
+  }
 }
 
 .customers {
@@ -155,6 +172,10 @@
 
   @media (max-width: $media768) {
     transform: translateY(80px);
+  }
+
+  @media (max-width: $media390) {
+    transform: translateY(0);
   }
 }
 
