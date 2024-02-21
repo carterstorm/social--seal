@@ -1,16 +1,13 @@
-import classNames from "classnames";
 import HeroHeadingStyles from "./heroHeadingStyles.module.scss";
 
 export function HeroHeading() {
   return (
-    <h2 className={classNames(HeroHeadingStyles.heroTitle)}>
-      <span className={classNames(HeroHeadingStyles.heroTitle__span)}>
-        Save Time
-      </span>
-      <span className={classNames(HeroHeadingStyles.heroTitle__span)}>
+    <h2 className={HeroHeadingStyles.heroTitle}>
+      <span className={HeroHeadingStyles.heroTitle__span}>Save Time</span>
+      <span className={HeroHeadingStyles.heroTitle__span}>
         Build Connections
       </span>
-      <span className={classNames(HeroHeadingStyles.heroTitle__span)}>
+      <span className={HeroHeadingStyles.heroTitle__span}>
         Increase Profits
       </span>
     </h2>

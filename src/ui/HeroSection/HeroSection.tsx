@@ -1,6 +1,5 @@
-import classNames from "classnames";
-import HeroSectionStyles from "./heroSectionStyles.module.scss";
-import ButtonsStyles from "../Buttons/buttonsStyles.module.scss";
+import heroSectionStyles from "./heroSectionStyles.module.scss";
+import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
 import { SocialButtons } from "../SocialButtons/SocialButtons";
 import { HeroSubTitle } from "./HeroSubTitle/HeroSubTitle";
 import { HeroHeading } from "./HeroHeading/HeroHeading";
@@ -12,9 +11,9 @@ import { HeroTabletContainer } from "./HeroTabletContainer/HeroTabletContainer";
 
 export function HeroSection() {
   return (
-    <section className={classNames(HeroSectionStyles.hero)}>
-      <article className={classNames(HeroSectionStyles.hero__article)}>
-        <div className={classNames(HeroSectionStyles.content)}>
+    <section className={heroSectionStyles.hero}>
+      <article className={heroSectionStyles.hero__article}>
+        <div className={heroSectionStyles.content}>
           <HeroSubTitle />
           <HeroHeading />
           <HeroDesktopContainer>
@@ -27,7 +26,7 @@ export function HeroSection() {
             <ButtonLink
               title="What We Offer"
               path={toMain()}
-              className={classNames(ButtonsStyles["buttonLink--transparent"])}
+              className={buttonsStyles["buttonLink--transparent"]}
             />
           </Buttons>
         </HeroDesktopContainer>
