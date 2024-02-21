@@ -82,11 +82,19 @@
     background-position: center;
     background-size: cover;
 
+    @media (max-width: $media768) {
+      bottom: 0;
+    }
+
     &--offices {
       width: 141px;
       height: 140px;
       left: -11px;
       background-image: url("/card_offices.png");
+
+      @media (max-width: $media768) {
+        left: 0;
+      }
     }
 
     &--customers {
@@ -94,6 +102,10 @@
       height: 140px;
       left: -11px;
       background-image: url("/card_customers.png");
+
+      @media (max-width: $media768) {
+        left: 0;
+      }
     }
 
     &--workers {
@@ -101,6 +113,10 @@
       height: 148px;
       right: -31px;
       background-image: url("/card_workers.png");
+
+      @media (max-width: $media768) {
+        right: 0;
+      }
     }
 
     &--projects {
@@ -108,6 +124,10 @@
       height: 142px;
       left: -11px;
       background-image: url("/card_projects.png");
+
+      @media (max-width: $media768) {
+        left: 0;
+      }
     }
   }
 }
