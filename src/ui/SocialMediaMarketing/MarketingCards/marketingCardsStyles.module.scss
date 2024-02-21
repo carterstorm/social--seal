@@ -14,6 +14,12 @@
     align-content: center;
     margin-right: 0;
   }
+
+  @media (max-width: $media768) {
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 15px;
+  }
 }
 
 .card {
@@ -113,6 +119,10 @@
   @media (max-width: $media976) {
     transform: translateY(40px);
   }
+
+  @media (max-width: $media768) {
+    transform: translateY(80px);
+  }
 }
 
 .customers {
@@ -121,6 +131,10 @@
 
   @media (max-width: $media976) {
     transform: translateY(40px);
+  }
+
+  @media (max-width: $media768) {
+    transform: translateY(80px);
   }
 }
 
