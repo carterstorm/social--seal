@@ -26,6 +26,10 @@
   &__emphasis {
     font-style: normal;
 
+    &--swiper {
+      text-decoration: underline;
+    }
+
     @media (max-width: $media390) {
       text-decoration: underline;
     }

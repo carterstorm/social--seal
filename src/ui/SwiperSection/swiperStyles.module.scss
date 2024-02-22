@@ -1,0 +1,19 @@
+@import "/src/stylesVariables.scss";
+
+.swiper {
+  @include desktopMaxWidth;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  column-gap: 44px;
+  padding-bottom: 152px;
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}
+
+.content {
+}

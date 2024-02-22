@@ -5,7 +5,11 @@ import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.
 import sectionParagraphsStyles from "../SectionParagraphs/sectionParagraphsStyles.module.scss";
 import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
-import { SectionParagraphs } from "../SectionParagraphs/SectionParagraphs";
+import {
+  Emphasis,
+  Paragraph,
+  SectionParagraphs,
+} from "../SectionParagraphs/SectionParagraphs";
 import { ButtonLink, Buttons } from "../Buttons/Buttons";
 import { toMain } from "../../routes";
 import { MarketingCards } from "./MarketingCards";
@@ -27,38 +31,20 @@ export const SocialMediaMarketing = () => {
             </SectionHeading>
             <SectionParagraphs
               className={sectionParagraphsStyles["container--socialMarketing"]}>
-              <p className={sectionParagraphsStyles.container__paragraph}>
+              <Paragraph>
                 Social Media is more than just posting and showing off how many
                 followers you have. It's a valuable addition to your marketing
-                strategy that{" "}
-                <em className={sectionParagraphsStyles.container__emphasis}>
-                  builds trust
-                </em>{" "}
-                and{" "}
-                <em className={sectionParagraphsStyles.container__emphasis}>
-                  creates connections
-                </em>{" "}
-                with potential customers to{" "}
-                <em className={sectionParagraphsStyles.container__emphasis}>
-                  drive sales
-                </em>{" "}
-                and{" "}
-                <em className={sectionParagraphsStyles.container__emphasis}>
-                  increase your revenue
-                </em>
-                .
-              </p>
-              <p className={sectionParagraphsStyles.container__paragraph}>
+                strategy that <Emphasis>builds trust</Emphasis> and{" "}
+                <Emphasis> creates connections</Emphasis> with potential
+                customers to <Emphasis>drive sales</Emphasis> and{" "}
+                <Emphasis>increase your revenue</Emphasis>.
+              </Paragraph>
+              <Paragraph>
                 Save your time and money by partnering with us and start seeing
                 results that give you the{" "}
-                <em className={sectionParagraphsStyles.container__emphasis}>
-                  highest return on investment
-                </em>
-                .
-              </p>
-              <p className={sectionParagraphsStyles.container__paragraph}>
-                After all; when you grow, we grow together.
-              </p>
+                <Emphasis>highest return on investment</Emphasis>.
+              </Paragraph>
+              <Paragraph>After all; when you grow, we grow together.</Paragraph>
             </SectionParagraphs>
           </div>
           <Buttons className={buttonsStyles["buttons--socialMarketing"]}>
