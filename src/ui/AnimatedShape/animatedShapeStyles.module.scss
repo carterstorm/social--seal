@@ -1,3 +1,5 @@
+@import "/src/stylesVariables.scss";
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -12,15 +14,34 @@
 
 .rotatedShape {
   position: absolute;
+  z-index: -10;
   animation: rotate 3s linear infinite;
 
   &--swiperFirst {
     top: -49px;
     left: -103px;
+
+    @media (max-width: $media1400) {
+      left: 350px;
+    }
+
+    @media (max-width: $media768) {
+      left: 45px;
+      top: -30px;
+    }
+
+    @media (max-width: $media567) {
+      left: 24px;
+      top: -72px;
+    }
   }
 
   &--swiperSecond {
     bottom: -66px;
     right: 83px;
+
+    @media (max-width: $media768) {
+      display: none;
+    }
   }
 }
