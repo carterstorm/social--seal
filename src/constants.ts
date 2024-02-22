@@ -5,6 +5,12 @@ import LinkedInSvg from "./assets/linkedin_svg.svg";
 import GoogleSvg from "./assets/google_svg.svg";
 import TwitterSvg from "./assets/twitter_svg.svg";
 
+import SwiperPhoto1 from "/swiper_1.jpg";
+import SwiperPhoto2 from "/swiper_2.jpg";
+import SwiperPhoto3 from "/swiper_3.jpg";
+import SwiperPhoto4 from "/swiper_4.jpg";
+import SwiperPhoto5 from "/swiper_5.jpg";
+
 // ----------------- Hero -----------------
 
 export const socials = [
@@ -48,3 +54,20 @@ export const marketingCardsData = [
   { id: 3, title: "customers", number: 15 },
   { id: 4, title: "projects", number: 1300 },
 ];
+
+// ----------------- Swiper Data -----------------
+
+export const swiperData = [
+  { id: 1, url: SwiperPhoto1 },
+  { id: 2, url: SwiperPhoto2 },
+  { id: 3, url: SwiperPhoto3 },
+  { id: 4, url: SwiperPhoto4 },
+  { id: 5, url: SwiperPhoto5 },
+];
+
+export const swiperBreakpoints = {
+  768: {
+    slidesPerView: 3,
+    spaceBetween: 20,
+  },
+};

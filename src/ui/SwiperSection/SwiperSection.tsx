@@ -10,6 +10,7 @@ import {
 } from "../SectionParagraphs/SectionParagraphs";
 import { ButtonLink } from "../Buttons/Buttons";
 import { toMain } from "../../routes";
+import { SwiperComponent } from "./SwiperComponent/SwiperComponent";
 
 export const SwiperSection = () => {
   return (
@@ -43,6 +44,7 @@ export const SwiperSection = () => {
         </div>
         <ButtonLink title="View More" path={toMain()} />
       </article>
+      <SwiperComponent />
     </section>
   );
 };
