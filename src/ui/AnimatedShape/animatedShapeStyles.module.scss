@@ -1,0 +1,26 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotatedShape {
+  position: absolute;
+  animation: rotate 3s linear infinite;
+
+  &--swiperFirst {
+    top: -49px;
+    left: -103px;
+  }
+
+  &--swiperSecond {
+    bottom: -66px;
+    right: 83px;
+  }
+}

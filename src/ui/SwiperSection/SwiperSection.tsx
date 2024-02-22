@@ -3,6 +3,7 @@ import { SectionTitle } from "../SectionTitle/SectionTitle";
 import swiperStyles from "./swiperStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
 import sectionParagraphsStyles from "../SectionParagraphs/sectionParagraphsStyles.module.scss";
+import animatedShapeStyles from "../AnimatedShape/animatedShapeStyles.module.scss";
 import {
   Emphasis,
   Paragraph,
@@ -11,6 +12,8 @@ import {
 import { ButtonLink } from "../Buttons/Buttons";
 import { toMain } from "../../routes";
 import { SwiperComponent } from "./SwiperComponent/SwiperComponent";
+import { AnimatedShape } from "../AnimatedShape/AnimatedShape";
+import classNames from "classnames";
 
 export const SwiperSection = () => {
   return (
@@ -47,6 +50,20 @@ export const SwiperSection = () => {
           </div>
         </div>
         <ButtonLink title="View More" path={toMain()} />
+        <AnimatedShape
+          source="/shape_1.png"
+          className={classNames(
+            animatedShapeStyles.rotatedShape,
+            animatedShapeStyles["rotatedShape--swiperFirst"]
+          )}
+        />
+        <AnimatedShape
+          source="/shape_2.png"
+          className={classNames(
+            animatedShapeStyles.rotatedShape,
+            animatedShapeStyles["rotatedShape--swiperSecond"]
+          )}
+        />
       </article>
       <div className={swiperStyles.desktopSwiperContainer}>
         <SwiperComponent />
