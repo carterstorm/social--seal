@@ -1,19 +1,49 @@
 @import "/src/stylesVariables.scss";
 
-.swiper {
+.swiperSection {
   @include desktopMaxWidth;
   display: grid;
   grid-template-columns: 400px 1fr;
   column-gap: 44px;
   padding-bottom: 152px;
 
+  @media (max-width: $media768) {
+    grid-template-columns: 1fr;
+  }
+
   &__article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+
+    @media (max-width: $media768) {
+      align-items: center;
+      gap: 48px;
+    }
   }
 }
 
 .content {
+  @media (max-width: $media768) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+}
+
+.desktopSwiperContainer {
+  @media (max-width: $media768) {
+    display: none;
+  }
+}
+
+.mobileSwiperContainer {
+  display: none;
+
+  @media (max-width: $media768) {
+    display: block;
+  }
 }

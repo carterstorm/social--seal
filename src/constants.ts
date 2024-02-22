@@ -66,7 +66,23 @@ export const swiperData = [
 ];
 
 export const swiperBreakpoints = {
+  340: {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+  },
+  390: {
+    slidesPerView: 1.2,
+    spaceBetween: 24,
+  },
+  480: {
+    slidesPerView: 2,
+    spaceBetween: 24,
+  },
   768: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+  769: {
     slidesPerView: 3,
     spaceBetween: 20,
   },

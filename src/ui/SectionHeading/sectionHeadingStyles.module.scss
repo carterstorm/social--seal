@@ -39,5 +39,12 @@
 
   &--swiper {
     margin: 16px 0 24px;
+
+    @media (max-width: $media768) {
+      max-width: 467px;
+      font-size: 47px;
+      line-height: 57px;
+      margin: 19px 0 28px;
+    }
   }
 }

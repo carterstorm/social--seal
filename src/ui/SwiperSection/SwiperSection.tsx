@@ -14,14 +14,15 @@ import { SwiperComponent } from "./SwiperComponent/SwiperComponent";
 
 export const SwiperSection = () => {
   return (
-    <section className={swiperStyles.swiper}>
-      <article className={swiperStyles.swiper__article}>
+    <section className={swiperStyles.swiperSection}>
+      <article className={swiperStyles.swiperSection__article}>
         <div className={swiperStyles.content}>
           <SectionTitle title="Our Expertise is Your Success" />
           <SectionHeading className={sectionHeadingStyles["heading--swiper"]}>
             Struggling to Make Engaging Content?
           </SectionHeading>
-          <SectionParagraphs>
+          <SectionParagraphs
+            className={sectionParagraphsStyles["container--swiper"]}>
             <Paragraph>
               From the research and planning to creating striking images and
               videos for your posts, our service focuses on creating a{" "}
@@ -41,10 +42,15 @@ export const SwiperSection = () => {
               and keep them coming back for more!
             </Paragraph>
           </SectionParagraphs>
+          <div className={swiperStyles.mobileSwiperContainer}>
+            <SwiperComponent />
+          </div>
         </div>
         <ButtonLink title="View More" path={toMain()} />
       </article>
-      <SwiperComponent />
+      <div className={swiperStyles.desktopSwiperContainer}>
+        <SwiperComponent />
+      </div>
     </section>
   );
 };
