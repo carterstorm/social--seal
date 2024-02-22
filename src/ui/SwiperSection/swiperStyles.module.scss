@@ -9,6 +9,11 @@
 
   @media (max-width: $media768) {
     grid-template-columns: 1fr;
+    padding-bottom: 112px;
+  }
+
+  @media (max-width: $media390) {
+    padding-bottom: 57px;
   }
 
   &__article {
