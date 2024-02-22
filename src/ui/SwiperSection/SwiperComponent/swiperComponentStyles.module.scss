@@ -5,7 +5,7 @@
   width: 1185px;
 
   @media (max-width: $media768) {
-    width: 90vw;
+    width: calc(100vw - 78px);
   }
 }
 

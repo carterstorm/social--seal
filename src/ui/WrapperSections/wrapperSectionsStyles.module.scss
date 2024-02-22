@@ -1,4 +1,10 @@
+@import "/src/stylesVariables.scss";
+
 .container {
   padding: 112px 0;
   overflow-x: hidden;
+
+  @media (max-width: $media390) {
+    padding: 80px 0 70px;
+  }
 }
