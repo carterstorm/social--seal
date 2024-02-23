@@ -7,6 +7,16 @@
   color: #0b0b0b;
   margin: 32px 0;
 
+  @media (max-width: $media976) {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  @media (max-width: $media768) {
+    font-size: 50px;
+    line-height: 66px;
+  }
+
   &--socialMarketing {
     color: #fff;
     max-width: 565px;
@@ -60,6 +70,25 @@
       margin: 20px 0 18px;
       font-size: 32px;
       line-height: 39px;
+    }
+  }
+
+  &--growthStrategy {
+    margin: 16px 0 58px;
+    max-width: 500px;
+
+    @media (max-width: $media976) {
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: $media768) {
+      margin: 14px auto 30px auto;
+    }
+
+    @media (max-width: $media390) {
+      font-size: 32px;
+      line-height: 42px;
+      margin: 20px auto 24px auto;
     }
   }
 }

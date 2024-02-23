@@ -9,6 +9,16 @@
   color: #727272;
   font-weight: 200;
 
+  @media (max-width: $media976) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $media768) {
+    font-size: 19px;
+    line-height: 32px;
+  }
+
   &--socialMarketing {
     color: #bbb;
     font-size: 18px;
@@ -21,10 +31,28 @@
 
   &--swiper {
     margin-bottom: 37px;
+
+    @media (max-width: $media976) {
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: $media768) {
+      margin-bottom: 37px;
+    }
   }
 
   &__paragraph {
     margin: 0;
+
+    @media (max-width: $media976) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    @media (max-width: $media768) {
+      font-size: 19px;
+      line-height: 32px;
+    }
   }
 
   &__emphasis {

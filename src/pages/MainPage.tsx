@@ -3,6 +3,7 @@ import { HeroSection } from "../ui/HeroSection/HeroSection";
 import { WrapperSections } from "../ui/WrapperSections/WrapperSections";
 import { SwiperSection } from "../ui/SwiperSection/SwiperSection";
 import { ReputationSection } from "../ui/ReputationSection/ReputationSection";
+import { GrowthStrategy } from "../ui/GrowthStrategy/GrowthStrategy";
 
 export default function MainPage() {
   return (
@@ -12,6 +13,7 @@ export default function MainPage() {
       <WrapperSections>
         <SwiperSection />
         <ReputationSection />
+        <GrowthStrategy />
       </WrapperSections>
     </>
   );
