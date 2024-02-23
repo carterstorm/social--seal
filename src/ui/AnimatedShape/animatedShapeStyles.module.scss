@@ -12,6 +12,18 @@
   }
 }
 
+@keyframes fly {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .rotatedShape {
   position: absolute;
   z-index: -10;
@@ -20,6 +32,7 @@
   &--swiperFirst {
     top: -49px;
     left: -103px;
+    animation-delay: 0.2s;
 
     @media (max-width: $media1400) {
       left: 350px;
@@ -39,6 +52,37 @@
   &--swiperSecond {
     bottom: -66px;
     right: 83px;
+    animation-delay: 0.1s;
+
+    @media (max-width: $media768) {
+      display: none;
+    }
+  }
+
+  &--reputation {
+    animation-delay: 0.3s;
+    top: -98px;
+    right: 16px;
+
+    @media (max-width: $media768) {
+      display: none;
+    }
+  }
+}
+
+.floatingShape {
+  position: absolute;
+  z-index: -10;
+  animation: fly 3s linear infinite;
+
+  &--reputation {
+    right: -53px;
+    bottom: -35px;
+
+    @media (max-width: $media1230) {
+      right: 25px;
+      bottom: -45px;
+    }
 
     @media (max-width: $media768) {
       display: none;

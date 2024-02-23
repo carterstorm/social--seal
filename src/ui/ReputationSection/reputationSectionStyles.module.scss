@@ -1,0 +1,44 @@
+@import "/src/stylesVariables.scss";
+
+.reputation {
+  @include desktopMaxWidth;
+  display: grid;
+  grid-template-columns: minmax(350px, 585px) 400px;
+  align-items: center;
+  column-gap: 135px;
+  padding-bottom: 112px;
+
+  @media (max-width: $media976) {
+    grid-template-columns: minmax(350px, 585px) minmax(300px, 400px);
+    column-gap: 30px;
+  }
+
+  @media (max-width: $media768) {
+    grid-template-columns: 1fr;
+  }
+
+  &__article {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    @media (max-width: $media768) {
+      align-items: center;
+    }
+
+    @media (max-width: $media390) {
+      gap: 20px;
+    }
+  }
+}
+
+.content {
+  @media (max-width: $media768) {
+    text-align: center;
+    margin-top: 60px;
+  }
+}

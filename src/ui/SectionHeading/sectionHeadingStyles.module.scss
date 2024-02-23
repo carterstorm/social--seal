@@ -52,4 +52,14 @@
       line-height: 55px;
     }
   }
+
+  &--reputation {
+    margin: 16px 0 24px;
+
+    @media (max-width: $media390) {
+      margin: 20px 0 18px;
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
 }
