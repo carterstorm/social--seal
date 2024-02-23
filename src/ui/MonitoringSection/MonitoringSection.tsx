@@ -1,7 +1,6 @@
 import { toMain } from "../../routes";
 import { Buttons, ButtonLink } from "../Buttons/Buttons";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
-import { SectionImage } from "../SectionImage/SectionImage";
 import {
   SectionParagraphs,
   Paragraph,
@@ -12,6 +11,7 @@ import monitoringSectionStyles from "./monitoringSectionStyles.module.scss";
 import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
 import sectionParagraphsStyles from "../SectionParagraphs/sectionParagraphsStyles.module.scss";
+import { MonitoringImage } from "./MonitoringImage/MonitoringImage";
 
 export const MonitoringSection = () => {
   return (
@@ -47,7 +47,7 @@ export const MonitoringSection = () => {
           />
         </Buttons>
       </article>
-      <SectionImage source="/monitoring.png" alt="Monitoring Section Image" />
+      <MonitoringImage />
     </section>
   );
 };

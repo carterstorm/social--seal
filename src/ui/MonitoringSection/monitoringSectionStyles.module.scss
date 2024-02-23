@@ -3,7 +3,7 @@
 .monitoring {
   @include desktopMaxWidth;
   display: grid;
-  grid-template-columns: minmax(350px, 633px) 530px;
+  grid-template-columns: 1fr 530px;
   align-items: center;
   column-gap: 61px;
   padding-bottom: 112px;

@@ -1,0 +1,49 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/monitoring.png");
+}
+
+.iconsContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  animation: spin 8s linear infinite;
+}
+
+.icon {
+  position: absolute;
+
+  &--first {
+    top: -71px;
+    left: -30px;
+  }
+
+  &--second {
+    bottom: 71px;
+    right: 0;
+  }
+}
