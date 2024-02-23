@@ -4,6 +4,7 @@ import { WrapperSections } from "../ui/WrapperSections/WrapperSections";
 import { SwiperSection } from "../ui/SwiperSection/SwiperSection";
 import { ReputationSection } from "../ui/ReputationSection/ReputationSection";
 import { GrowthStrategy } from "../ui/GrowthStrategy/GrowthStrategy";
+import { MonitoringSection } from "../ui/MonitoringSection/MonitoringSection";
 
 export default function MainPage() {
   return (
@@ -14,6 +15,7 @@ export default function MainPage() {
         <SwiperSection />
         <ReputationSection />
         <GrowthStrategy />
+        <MonitoringSection />
       </WrapperSections>
     </>
   );

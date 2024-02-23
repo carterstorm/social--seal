@@ -87,3 +87,54 @@ export const swiperBreakpoints = {
     spaceBetween: 20,
   },
 };
+
+// ----------------- Monitoring Section Data -----------------
+
+export const monitoringList = [
+  {
+    id: 1,
+    text: "Brand Impersonation",
+    borderColor: "#FFD78D",
+    bgColor: "#FFFAF1",
+  },
+  {
+    id: 2,
+    text: "Compromised Account",
+    borderColor: "#FFEF3E",
+    bgColor: "#FFFFEE",
+  },
+  { id: 3, text: "Scams", borderColor: "#FFD78D", bgColor: "#FFFAF1" },
+  {
+    id: 4,
+    text: "Hi-jacked Posts",
+    borderColor: "#C0D4F1",
+    bgColor: "#F6FCFF",
+  },
+  { id: 5, text: "Bad Sentiment", borderColor: "#FFEF3E", bgColor: "#FFFFEE" },
+  { id: 6, text: "Bad Reviews", borderColor: "#FFB6D8", bgColor: "#FFF6FA" },
+  {
+    id: 7,
+    text: "Competitor Envy",
+    borderColor: "#CFE2CF",
+    bgColor: "#F7FFF7",
+  },
+  { id: 8, text: "False Media", borderColor: "#C0D4F1", bgColor: "#F6FCFF" },
+  {
+    id: 9,
+    text: "Low Social Authority",
+    borderColor: "#FFAFAF",
+    bgColor: "#FFF6F6",
+  },
+  {
+    id: 10,
+    text: "Information Inaccuracy",
+    borderColor: "#DAC0FF",
+    bgColor: "#FCF9FF",
+  },
+  {
+    id: 11,
+    text: "Missed Messages",
+    borderColor: "#FFB6FF",
+    bgColor: "#FFF6FF",
+  },
+];
