@@ -4,6 +4,7 @@ import { SectionHeading } from "../SectionHeading/SectionHeading";
 import {
   SectionParagraphs,
   Paragraph,
+  Emphasis,
 } from "../SectionParagraphs/SectionParagraphs";
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 import { MonitoringList } from "./MonitoringList/MonitoringList";
@@ -28,12 +29,37 @@ export const MonitoringSection = () => {
             className={sectionParagraphsStyles["container--monitoring"]}>
             <Paragraph>
               Staying on top of how your brand is being used is an important
-              aspect to protect your identity and reputation.
+              aspect to{" "}
+              <Emphasis
+                className={
+                  sectionParagraphsStyles["container__emphasis--monitoring"]
+                }>
+                protect your identity and reputation.
+              </Emphasis>
             </Paragraph>
             <Paragraph>
-              Our sophisticated threat monitoring system enables us to quickly
-              identify threats towards your brand and deal with them to prevent
-              damage to your reputation.
+              Our sophisticated{" "}
+              <Emphasis
+                className={
+                  sectionParagraphsStyles["container__emphasis--monitoring"]
+                }>
+                threat monitoring
+              </Emphasis>{" "}
+              system enables us to{" "}
+              <Emphasis
+                className={
+                  sectionParagraphsStyles["container__emphasis--monitoring"]
+                }>
+                quickly identify threats
+              </Emphasis>{" "}
+              towards your brand and deal with them to{" "}
+              <Emphasis
+                className={
+                  sectionParagraphsStyles["container__emphasis--monitoring"]
+                }>
+                prevent damage
+              </Emphasis>{" "}
+              to your reputation.
             </Paragraph>
             <Paragraph>The most common threats we encounter:</Paragraph>
           </SectionParagraphs>

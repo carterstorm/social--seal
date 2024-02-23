@@ -76,5 +76,13 @@
     @media (max-width: $media390) {
       text-decoration: underline;
     }
+
+    &--monitoring {
+      text-decoration: none;
+
+      @media (max-width: $media390) {
+        text-decoration: underline;
+      }
+    }
   }
 }
