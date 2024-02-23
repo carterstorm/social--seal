@@ -65,4 +65,10 @@
       padding: 28px 38px;
     }
   }
+
+  &--monitoring {
+    @media (max-width: $media768) {
+      display: none;
+    }
+  }
 }

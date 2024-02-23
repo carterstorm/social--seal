@@ -12,6 +12,7 @@ import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
 import sectionParagraphsStyles from "../SectionParagraphs/sectionParagraphsStyles.module.scss";
 import { MonitoringImage } from "./MonitoringImage/MonitoringImage";
+import classNames from "classnames";
 
 export const MonitoringSection = () => {
   return (
@@ -43,7 +44,10 @@ export const MonitoringSection = () => {
           <ButtonLink
             title="Find Out more"
             path={toMain()}
-            className={buttonsStyles["buttonLink--transparent"]}
+            className={classNames(
+              buttonsStyles["buttonLink--transparent"],
+              buttonsStyles["buttonLink--monitoring"]
+            )}
           />
         </Buttons>
       </article>
