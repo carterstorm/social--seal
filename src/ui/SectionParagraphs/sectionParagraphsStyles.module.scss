@@ -12,11 +12,13 @@
   @media (max-width: $media976) {
     font-size: 16px;
     line-height: 28px;
+    gap: 12px;
   }
 
   @media (max-width: $media768) {
     font-size: 19px;
     line-height: 32px;
+    gap: 32px;
   }
 
   &--socialMarketing {

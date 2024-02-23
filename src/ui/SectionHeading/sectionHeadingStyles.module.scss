@@ -95,5 +95,9 @@
   &--monitoring {
     margin: 16px 0 58px;
     max-width: 500px;
+
+    @media (max-width: $media976) {
+      margin-bottom: 16px;
+    }
   }
 }
