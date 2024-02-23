@@ -22,7 +22,7 @@ export const MonitoringSection = () => {
           <SectionTitle title="Our Expertise is Your Success" />
           <SectionHeading
             className={sectionHeadingStyles["heading--monitoring"]}>
-            Troubles Growing Your Audience?
+            Social Gossiping Slowing You Down?
           </SectionHeading>
           <SectionParagraphs
             className={sectionParagraphsStyles["container--monitoring"]}>
@@ -39,7 +39,7 @@ export const MonitoringSection = () => {
           </SectionParagraphs>
           <MonitoringList />
         </div>
-        <Buttons>
+        <Buttons className={buttonsStyles["buttons--monitoring"]}>
           <ButtonLink title="Protect Your Brand" path={toMain()} />
           <ButtonLink
             title="Find Out more"
