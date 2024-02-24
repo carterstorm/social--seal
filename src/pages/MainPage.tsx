@@ -6,6 +6,8 @@ import { ReputationSection } from "../ui/ReputationSection/ReputationSection";
 import { GrowthStrategy } from "../ui/GrowthStrategy/GrowthStrategy";
 import { MonitoringSection } from "../ui/MonitoringSection/MonitoringSection";
 import { AllQuestions } from "../ui/AllQuestions/AllQuestions";
+import { GradientSection } from "../ui/GradientSection/GradientSection";
+import { WhatWeDo } from "../ui/WhatWeDo/WhatWeDo";
 
 export default function MainPage() {
   return (
@@ -19,6 +21,9 @@ export default function MainPage() {
         <MonitoringSection />
       </WrapperSections>
       <AllQuestions />
+      <GradientSection>
+        <WhatWeDo />
+      </GradientSection>
     </>
   );
 }

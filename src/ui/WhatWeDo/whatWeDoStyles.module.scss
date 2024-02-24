@@ -1,0 +1,21 @@
+@import "/src/stylesVariables.scss";
+
+.whatWeDo {
+  @include desktopMaxWidth;
+  display: grid;
+  grid-template-columns: minmax(0, 585px) 561px;
+  align-items: flex-start;
+  column-gap: 54px;
+  padding-bottom: 112px;
+
+  &__article {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.content {
+  margin-top: 28px;
+}
