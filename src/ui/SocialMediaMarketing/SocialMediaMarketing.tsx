@@ -3,7 +3,7 @@ import socialMediaMarketingStyles from "./socialMediaMarketingStyles.module.scss
 import sectionTitleStyles from "../SectionTitle/sectionTitleStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
 import sectionParagraphsStyles from "../SectionParagraphs/sectionParagraphsStyles.module.scss";
-import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
+import buttonsStyles from "../Buttons/ButtonsStyles.module.scss";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
 import {
   Emphasis,

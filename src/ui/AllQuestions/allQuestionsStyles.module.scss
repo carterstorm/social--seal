@@ -7,6 +7,7 @@
   gap: 52px;
   padding-top: 112px;
   padding-bottom: 112px;
+  overflow-x: hidden;
 
   @media (max-width: $media768) {
     gap: 64px;
@@ -16,6 +17,12 @@
     background-image: url("/questions_bg.png");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  @media (max-width: $media390) {
+    padding-top: 81px;
+    margin-top: 31px;
+    padding-bottom: 105px;
   }
 
   &__header {

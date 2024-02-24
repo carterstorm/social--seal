@@ -23,8 +23,9 @@
   &--questions {
     margin-top: 60px;
 
-    @media (max-width: $media840) {
-      margin-top: 30px;
+    @media (max-width: $media390) {
+      margin-top: 51px;
+      width: 100%;
     }
   }
 }

@@ -9,7 +9,7 @@ import {
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 import { MonitoringList } from "./MonitoringList/MonitoringList";
 import monitoringSectionStyles from "./monitoringSectionStyles.module.scss";
-import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
+import buttonsStyles from "../Buttons/ButtonsStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
 import sectionParagraphsStyles from "../SectionParagraphs/sectionParagraphsStyles.module.scss";
 import { MonitoringImage } from "./MonitoringImage/MonitoringImage";

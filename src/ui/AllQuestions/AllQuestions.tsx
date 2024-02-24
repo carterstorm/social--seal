@@ -9,7 +9,7 @@ import allQuestionsStyles from "./allQuestionsStyles.module.scss";
 import QuestionsList from "./QuestionsList/QuestionsList";
 import { ButtonLink, Buttons } from "../Buttons/Buttons";
 import { toMain } from "../../routes";
-import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
+import buttonsStyles from "../Buttons/ButtonsStyles.module.scss";
 import { SpecialQuestionImage } from "./SpecialQuestionImage/SpecialQuestionImage";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
 

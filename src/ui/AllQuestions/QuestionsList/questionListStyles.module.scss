@@ -8,6 +8,10 @@
   flex-direction: column;
   gap: 16px;
 
+  @media (max-width: $media390) {
+    margin-top: 32px;
+  }
+
   &__item {
     display: flex;
   }

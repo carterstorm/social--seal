@@ -1,5 +1,5 @@
 import heroSectionStyles from "./heroSectionStyles.module.scss";
-import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
+import buttonsStyles from "../Buttons/ButtonsStyles.module.scss";
 import { SocialButtons } from "../SocialButtons/SocialButtons";
 import { HeroSubTitle } from "./HeroSubTitle/HeroSubTitle";
 import { HeroHeading } from "./HeroHeading/HeroHeading";

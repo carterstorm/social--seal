@@ -7,6 +7,11 @@
   top: 0;
   left: 0;
 
+  @media (max-width: $media567) {
+    padding: 0;
+    min-height: 105vw;
+  }
+
   &__image {
     position: absolute;
 
@@ -21,6 +26,10 @@
       @media (max-width: $media768) {
         width: 499px;
       }
+
+      @media (max-width: $media567) {
+        width: 92vw;
+      }
     }
 
     &--second {
@@ -29,6 +38,15 @@
 
       @media (max-width: $media768) {
         left: 235px;
+      }
+
+      @media (max-width: $media567) {
+        left: 220px;
+        width: 46vw;
+      }
+
+      @media (max-width: $media390) {
+        left: 100px;
       }
     }
   }
