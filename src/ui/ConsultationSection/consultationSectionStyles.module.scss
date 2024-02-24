@@ -1,0 +1,23 @@
+@import "/src/stylesVariables.scss";
+
+.consultation {
+  @include desktopMaxWidth;
+  display: grid;
+  grid-template-columns: minmax(350px, 624px) minmax(300px, 483px);
+  align-items: flex-start;
+  column-gap: 93px;
+  padding-bottom: 112px;
+
+  @media (max-width: $media976) {
+    column-gap: 40px;
+    align-items: center;
+  }
+}
+
+.content {
+  margin-top: 63px;
+
+  @media (max-width: $media976) {
+    margin-top: 0;
+  }
+}

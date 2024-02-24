@@ -1,0 +1,50 @@
+@import "/src/stylesVariables.scss";
+
+.consultationForm {
+  padding: 63px 46px 45px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 30px;
+  color: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+
+  @media (max-width: $media976) {
+    padding-top: 45px;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.consultationFormHeading {
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  color: #0b0b0b;
+  font-weight: 400;
+}
+
+.consultationFormInput {
+  padding: 23px 29px;
+  background-color: #fbfdff;
+  border: 1px solid #d5d5d5;
+  border-radius: 13px;
+
+  &::placeholder {
+    color: #0b0b0b;
+  }
+}
+
+.consultationFormButton {
+  background-color: #3482ff;
+  border: none;
+  height: 72px;
+  border-radius: 20px;
+  font-weight: 400;
+  color: white;
+  text-transform: capitalize;
+}
