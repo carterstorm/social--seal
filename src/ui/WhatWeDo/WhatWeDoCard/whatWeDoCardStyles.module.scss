@@ -1,0 +1,60 @@
+@import "/src/stylesVariables.scss";
+
+.card {
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0px 35px 54px 0px rgba(61, 90, 125, 0.13);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--first {
+    height: 25%;
+    width: 34%;
+    top: 11px;
+    left: 0;
+  }
+
+  &--second {
+    width: 50%;
+    height: 29%;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__info {
+    width: 70%;
+  }
+
+  &__number {
+    font-size: 55px;
+    line-height: 44px;
+    font-weight: 700;
+
+    @media (max-width: $media976) {
+      font-size: 30px;
+      line-height: 14px;
+    }
+
+    &--first {
+      color: #fc201e;
+    }
+
+    &--second {
+      color: #1eb9fc;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0b0b0b;
+
+    @media (max-width: $media976) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

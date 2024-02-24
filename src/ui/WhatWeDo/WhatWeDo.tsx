@@ -8,6 +8,7 @@ import {
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 import whatWeDoStyles from "./whatWeDoStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
+import { WhatWeDoImage } from "./WhatWeDoImage/WhatWeDoImage";
 
 export const WhatWeDo = () => {
   return (
@@ -31,6 +32,7 @@ export const WhatWeDo = () => {
           <ButtonLink title="Protect Your Brand" path={toMain()} />
         </Buttons>
       </article>
+      <WhatWeDoImage />
     </section>
   );
 };

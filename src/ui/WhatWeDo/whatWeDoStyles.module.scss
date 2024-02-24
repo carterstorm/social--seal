@@ -3,10 +3,15 @@
 .whatWeDo {
   @include desktopMaxWidth;
   display: grid;
-  grid-template-columns: minmax(0, 585px) 561px;
+  grid-template-columns: minmax(350px, 585px) minmax(300px, 561px);
   align-items: flex-start;
   column-gap: 54px;
   padding-bottom: 112px;
+
+  @media (max-width: $media1230) {
+    align-items: center;
+    column-gap: 30px;
+  }
 
   &__article {
     order: 1;
@@ -18,4 +23,8 @@
 
 .content {
   margin-top: 28px;
+
+  @media (max-width: $media1230) {
+    margin-top: 0;
+  }
 }
