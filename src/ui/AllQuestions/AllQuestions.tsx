@@ -11,13 +11,14 @@ import { ButtonLink, Buttons } from "../Buttons/Buttons";
 import { toMain } from "../../routes";
 import buttonsStyles from "../Buttons/buttonsStyles.module.scss";
 import { SpecialQuestionImage } from "./SpecialQuestionImage/SpecialQuestionImage";
+import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
 
 export const AllQuestions = () => {
   return (
     <section className={allQuestionsStyles.allQuestions}>
       <header className={allQuestionsStyles.allQuestions__header}>
         <SectionTitle title="Our Expertise is Your Success" />
-        <SectionHeading>
+        <SectionHeading className={sectionHeadingStyles["heading--questions"]}>
           We Create Creative Designs For Every Web Page
         </SectionHeading>
         <SectionParagraphs>

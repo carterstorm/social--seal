@@ -1,3 +1,5 @@
+@import "/src/stylesVariables.scss";
+
 .specialContainer {
   min-height: 539px;
   padding: 0 15px;
@@ -12,14 +14,22 @@
       top: 0;
       right: 0;
 
-      @media (max-width: 850px) {
+      @media (max-width: $media840) {
         width: 55vw;
+      }
+
+      @media (max-width: $media768) {
+        width: 499px;
       }
     }
 
     &--second {
       bottom: 0;
       left: 15px;
+
+      @media (max-width: $media768) {
+        left: 235px;
+      }
     }
   }
 }

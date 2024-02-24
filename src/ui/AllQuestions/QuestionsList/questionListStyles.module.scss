@@ -4,14 +4,12 @@
   margin: 26px 0 0;
   padding: 0;
   list-style: none;
-
-  @media (max-width: $media567) {
-    margin: 32px 0 52px 0;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
   &__item {
     display: flex;
-    margin: 16px 0;
   }
 
   &__image {

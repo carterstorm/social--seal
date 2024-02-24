@@ -23,7 +23,7 @@
   &--questions {
     margin-top: 60px;
 
-    @media (max-width: 850px) {
+    @media (max-width: $media840) {
       margin-top: 30px;
     }
   }

@@ -112,4 +112,14 @@
       margin: 20px 0 24px;
     }
   }
+
+  &--questions {
+    margin: 16px 0;
+
+    @media (max-width: $media768) {
+      margin: 15px 0 0;
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
 }
