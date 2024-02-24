@@ -11,12 +11,12 @@ export const WhatWeDoImage = () => {
       />
       <WhatWeDoCard
         card="first"
-        numberValue={"5+"}
+        numberValue={"18+"}
         description="Years Of Experience"
       />
       <WhatWeDoCard
         card="second"
-        numberValue={"3K+"}
+        numberValue={"5K+"}
         description="Have Faithfully Completed Projects Till Date"
       />
     </div>

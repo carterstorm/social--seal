@@ -8,6 +8,7 @@ import {
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 import whatWeDoStyles from "./whatWeDoStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
+import buttonsStyles from "../Buttons/ButtonsStyles.module.scss";
 import { WhatWeDoImage } from "./WhatWeDoImage/WhatWeDoImage";
 
 export const WhatWeDo = () => {
@@ -16,8 +17,7 @@ export const WhatWeDo = () => {
       <article className={whatWeDoStyles.whatWeDo__article}>
         <div className={whatWeDoStyles.content}>
           <SectionTitle title="What We Do" />
-          <SectionHeading
-            className={sectionHeadingStyles["heading--brandOversight"]}>
+          <SectionHeading className={sectionHeadingStyles["heading--whatWeDo"]}>
             We design and develop web and mobile applications for our clients
             worldwide
           </SectionHeading>
@@ -28,7 +28,7 @@ export const WhatWeDo = () => {
             </Paragraph>
           </SectionParagraphs>
         </div>
-        <Buttons>
+        <Buttons className={buttonsStyles["buttons--whatWeDo"]}>
           <ButtonLink title="Protect Your Brand" path={toMain()} />
         </Buttons>
       </article>

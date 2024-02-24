@@ -7,10 +7,16 @@
   align-items: flex-start;
   column-gap: 54px;
   padding-bottom: 112px;
+  padding-top: 63px;
 
   @media (max-width: $media1230) {
     align-items: center;
     column-gap: 30px;
+  }
+
+  @media (max-width: $media768) {
+    grid-template-columns: 1fr;
+    padding-bottom: 152px;
   }
 
   &__article {
@@ -26,5 +32,10 @@
 
   @media (max-width: $media1230) {
     margin-top: 0;
+  }
+
+  @media (max-width: $media768) {
+    margin-top: 50px;
+    text-align: center;
   }
 }

@@ -28,6 +28,12 @@
       width: 100%;
     }
   }
+
+  &--whatWeDo {
+    @media (max-width: $media768) {
+      display: none;
+    }
+  }
 }
 
 .buttonLink {

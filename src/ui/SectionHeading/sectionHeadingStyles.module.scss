@@ -128,7 +128,13 @@
     }
   }
 
-  &--brandOversight {
+  &--whatWeDo {
     margin: 16px 0 25px;
+
+    @media (max-width: $media768) {
+      margin: 14px 0 21px;
+      font-size: 45px;
+      line-height: 54px;
+    }
   }
 }
