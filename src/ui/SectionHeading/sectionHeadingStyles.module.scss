@@ -136,5 +136,11 @@
       font-size: 45px;
       line-height: 54px;
     }
+
+    @media (max-width: $media390) {
+      font-size: 35px;
+      line-height: 42px;
+      margin: 20px 0 32px;
+    }
   }
 }

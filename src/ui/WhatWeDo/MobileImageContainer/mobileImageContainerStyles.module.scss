@@ -1,0 +1,10 @@
+@import "/src/stylesVariables.scss";
+
+.container {
+  display: none;
+
+  @media (max-width: $media390) {
+    display: block;
+    margin-bottom: 32px;
+  }
+}

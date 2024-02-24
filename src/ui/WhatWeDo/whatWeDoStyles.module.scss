@@ -19,6 +19,11 @@
     padding-bottom: 152px;
   }
 
+  @media (max-width: $media390) {
+    padding-top: 0;
+    padding-bottom: 121px;
+  }
+
   &__article {
     order: 1;
     display: flex;
@@ -37,5 +42,9 @@
   @media (max-width: $media768) {
     margin-top: 50px;
     text-align: center;
+  }
+
+  @media (max-width: $media390) {
+    margin-top: 0;
   }
 }

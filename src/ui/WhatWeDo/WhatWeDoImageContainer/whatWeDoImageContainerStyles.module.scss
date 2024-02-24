@@ -1,0 +1,19 @@
+@import "/src/stylesVariables.scss";
+
+.container {
+  position: relative;
+
+  @media (max-width: $media768) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: $media768) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: $media390) {
+    display: none;
+  }
+}

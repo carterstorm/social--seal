@@ -9,7 +9,9 @@ import { SectionTitle } from "../SectionTitle/SectionTitle";
 import whatWeDoStyles from "./whatWeDoStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
 import buttonsStyles from "../Buttons/ButtonsStyles.module.scss";
+import { WhatWeDoImageContainer } from "./WhatWeDoImageContainer/WhatWeDoImageContainer";
 import { WhatWeDoImage } from "./WhatWeDoImage/WhatWeDoImage";
+import { MobileImageContainer } from "./MobileImageContainer/MobileImageContainer";
 
 export const WhatWeDo = () => {
   return (
@@ -21,6 +23,9 @@ export const WhatWeDo = () => {
             We design and develop web and mobile applications for our clients
             worldwide
           </SectionHeading>
+          <MobileImageContainer>
+            <WhatWeDoImage />
+          </MobileImageContainer>
           <SectionParagraphs>
             <Paragraph>
               Staying on top of how your brand is being used is an important
@@ -32,7 +37,7 @@ export const WhatWeDo = () => {
           <ButtonLink title="Protect Your Brand" path={toMain()} />
         </Buttons>
       </article>
-      <WhatWeDoImage />
+      <WhatWeDoImageContainer />
     </section>
   );
 };

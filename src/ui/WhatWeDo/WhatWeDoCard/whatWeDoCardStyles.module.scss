@@ -20,7 +20,7 @@
 
     @media (max-width: $media768) {
       top: -34px;
-      left: 45px;
+      left: 55px;
     }
   }
 
@@ -58,6 +58,11 @@
       line-height: 42px;
     }
 
+    @media (max-width: $media567) {
+      font-size: 30px;
+      line-height: 14px;
+    }
+
     &--first {
       color: #fc201e;
     }
@@ -81,6 +86,11 @@
     @media (max-width: $media768) {
       font-size: 18px;
       line-height: 24px;
+    }
+
+    @media (max-width: $media567) {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }
