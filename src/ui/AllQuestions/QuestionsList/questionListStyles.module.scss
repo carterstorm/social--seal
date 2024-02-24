@@ -1,0 +1,30 @@
+@import "/src/stylesVariables.scss";
+
+.list {
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $media567) {
+    margin: 32px 0 52px 0;
+  }
+
+  &__item {
+    display: flex;
+    margin: 16px 0;
+  }
+
+  &__image {
+    background-image: url("/check_icon.png");
+    background-size: cover;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    color: #959eb6;
+  }
+}

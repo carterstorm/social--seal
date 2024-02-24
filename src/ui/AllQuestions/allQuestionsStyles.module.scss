@@ -1,0 +1,24 @@
+@import "/src/stylesVariables.scss";
+
+.allQuestions {
+  @include desktopMaxWidth;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+
+  &__header {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+  }
+}
+
+.article {
+  display: grid;
+  grid-template-columns: minmax(0, 615px) 1fr;
+  grid-gap: 24px;
+
+  &__content {
+    order: 1;
+  }
+}

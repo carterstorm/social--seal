@@ -1,0 +1,19 @@
+@import "/src/stylesVariables.scss";
+
+.heading {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  width: 261px;
+  background: linear-gradient(
+      90.78deg,
+      #6071d9 36.51%,
+      #aa676f 63.73%,
+      #ccb41a 97.49%
+    ),
+    linear-gradient(90.71deg, #6071d9 36.51%, #aa676f 63.73%, #ccb41a 97.49%),
+    linear-gradient(90.59deg, #6071d9 36.51%, #aa676f 63.73%, #ccb41a 97.49%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

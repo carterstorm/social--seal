@@ -6,7 +6,7 @@
   grid-template-columns: minmax(350px, 633px) minmax(350px, 530px);
   align-items: center;
   column-gap: 61px;
-  padding-bottom: 112px;
+  padding-bottom: 0;
 
   @media (max-width: $media976) {
     column-gap: 6px;
@@ -15,11 +15,6 @@
   @media (max-width: $media768) {
     grid-template-columns: 1fr;
     justify-items: center;
-    padding-bottom: 100px;
-  }
-
-  @media (max-width: $media390) {
-    padding-bottom: 0;
   }
 
   &__article {

@@ -5,6 +5,7 @@ import { SwiperSection } from "../ui/SwiperSection/SwiperSection";
 import { ReputationSection } from "../ui/ReputationSection/ReputationSection";
 import { GrowthStrategy } from "../ui/GrowthStrategy/GrowthStrategy";
 import { MonitoringSection } from "../ui/MonitoringSection/MonitoringSection";
+import { AllQuestions } from "../ui/AllQuestions/AllQuestions";
 
 export default function MainPage() {
   return (
@@ -17,6 +18,7 @@ export default function MainPage() {
         <GrowthStrategy />
         <MonitoringSection />
       </WrapperSections>
+      <AllQuestions />
     </>
   );
 }
