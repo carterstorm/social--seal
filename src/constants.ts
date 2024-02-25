@@ -10,6 +10,7 @@ import SwiperPhoto2 from "/swiper_2.jpg";
 import SwiperPhoto3 from "/swiper_3.jpg";
 import SwiperPhoto4 from "/swiper_4.jpg";
 import SwiperPhoto5 from "/swiper_5.jpg";
+import { PersonType } from "./types";
 
 // ----------------- Hero -----------------
 
@@ -136,5 +137,28 @@ export const monitoringList = [
     text: "Missed Messages",
     borderColor: "#FFB6FF",
     bgColor: "#FFF6FF",
+  },
+];
+
+// ----------------- People Section Data -----------------
+
+export const people: PersonType[] = [
+  {
+    id: "1",
+    name: "Ryan Vetrovs",
+    jobTitle: "CEO Kawasaki Inc.",
+    personImage: "/person_1.png",
+  },
+  {
+    id: "2",
+    name: "Emerson Saris",
+    jobTitle: "CEO Kawasaki Inc.",
+    personImage: "/person_2.png",
+  },
+  {
+    id: "3",
+    name: "Lindsey Schleifer",
+    jobTitle: "CEO Kawasaki Inc.",
+    personImage: "/person_3.png",
   },
 ];
