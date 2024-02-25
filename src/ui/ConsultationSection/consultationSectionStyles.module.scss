@@ -12,6 +12,17 @@
     column-gap: 40px;
     align-items: center;
   }
+
+  @media (max-width: $media768) {
+    grid-template-columns: 1fr;
+    padding-bottom: 96px;
+  }
+
+  &__article {
+    @media (max-width: $media768) {
+      order: 1;
+    }
+  }
 }
 
 .content {
@@ -19,5 +30,10 @@
 
   @media (max-width: $media976) {
     margin-top: 0;
+  }
+
+  @media (max-width: $media768) {
+    margin-top: 56px;
+    text-align: center;
   }
 }

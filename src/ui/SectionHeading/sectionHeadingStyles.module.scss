@@ -146,5 +146,11 @@
 
   &--consultation {
     margin: 16px 0 25px;
+
+    @media (max-width: $media768) {
+      margin: 14px 0 25px;
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
 }

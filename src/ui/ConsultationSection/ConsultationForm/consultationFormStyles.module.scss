@@ -1,16 +1,27 @@
 @import "/src/stylesVariables.scss";
 
+.formContainer {
+  @media (max-width: $media768) {
+    padding: 0 30px;
+  }
+}
+
 .consultationForm {
   padding: 63px 46px 45px;
   display: flex;
   flex-direction: column;
-  column-gap: 30px;
+  gap: 30px;
   color: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 20px;
+  box-shadow: 0px 15px 30px 0px rgba(61, 90, 125, 0.08);
 
   @media (max-width: $media976) {
     padding-top: 45px;
+  }
+
+  @media (max-width: $media768) {
+    padding-top: 63px;
   }
 
   &__section {
@@ -26,6 +37,11 @@
   line-height: 30px;
   color: #0b0b0b;
   font-weight: 400;
+  margin: 0;
+
+  @media (max-width: $media768) {
+    text-align: left;
+  }
 }
 
 .consultationFormInput {

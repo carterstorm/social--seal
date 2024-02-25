@@ -6,6 +6,7 @@ import {
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 import consultationSectionStyles from "./consultationSectionStyles.module.scss";
 import sectionHeadingStyles from "../SectionHeading/sectionHeadingStyles.module.scss";
+import sectionTitleStyles from "../SectionTitle/sectionTitleStyles.module.scss";
 import { ConsultationForm } from "./ConsultationForm/ConsultationForm";
 
 export const ConsultationSection = () => {
@@ -13,7 +14,10 @@ export const ConsultationSection = () => {
     <section className={consultationSectionStyles.consultation}>
       <article className={consultationSectionStyles.consultation__article}>
         <div className={consultationSectionStyles.content}>
-          <SectionTitle title="95% Accuracy" />
+          <SectionTitle
+            title="95% Accuracy"
+            className={sectionTitleStyles["title--consultation"]}
+          />
           <SectionHeading
             className={sectionHeadingStyles["heading--consultation"]}>
             Worldwide Best Digital Marketing Agency
