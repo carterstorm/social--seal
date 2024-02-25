@@ -1,0 +1,106 @@
+@import "/src/stylesVariables.scss";
+
+.people {
+  @include desktopMaxWidth;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.peopleList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.person {
+  padding: 0 15px 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 0;
+  }
+}
+
+.personInfo {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  background-color: #fff;
+  border-top-right-radius: 24px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 30px 20px;
+    gap: 5px;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #0b0b0b;
+  }
+
+  &__jobTitle {
+    color: #737373;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+}
+
+.tabList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__circle {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 2px solid #d9d9d9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: #f89e52;
+    }
+
+    &--active {
+      border-color: #f89e52;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        background-color: #f89e52;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
