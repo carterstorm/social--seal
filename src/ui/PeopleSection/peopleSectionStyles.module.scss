@@ -7,12 +7,41 @@
   gap: 64px;
 }
 
+.peopleDesktopHeaderContainer {
+  @media (max-width: $media768) {
+    display: none;
+  }
+}
+
+.peopleMobileHeader {
+  display: none;
+
+  @media (max-width: $media768) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.peopleTeamContainer {
+  @media (max-width: $media768) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
 .peopleList {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: $media768) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .person {
@@ -20,6 +49,16 @@
   position: relative;
   top: 0;
   left: 0;
+
+  &:nth-child(n + 4) {
+    display: none;
+  }
+
+  @media (max-width: $media768) {
+    &:nth-child(n + 3) {
+      display: none;
+    }
+  }
 
   &__image {
     width: 100%;
@@ -41,6 +80,14 @@
     flex-direction: column;
     padding: 24px 30px 20px;
     gap: 5px;
+
+    @media (max-width: $media976) {
+      padding: 16px 22px 12px;
+    }
+
+    @media (max-width: $media768) {
+      padding: 24px 30px 20px;
+    }
   }
 
   &__name {
@@ -48,6 +95,16 @@
     line-height: 19px;
     font-weight: 700;
     color: #0b0b0b;
+
+    @media (max-width: $media976) {
+      font-size: 14px;
+      line-height: 11px;
+    }
+
+    @media (max-width: $media768) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
   &__jobTitle {
@@ -55,6 +112,16 @@
     font-size: 15px;
     line-height: 25px;
     font-weight: 400;
+
+    @media (max-width: $media976) {
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    @media (max-width: $media768) {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 }
 

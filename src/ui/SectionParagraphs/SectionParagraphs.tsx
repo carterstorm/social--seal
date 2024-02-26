@@ -15,9 +15,21 @@ export const SectionParagraphs = ({
   );
 };
 
-export const Paragraph = ({ children }: { children: React.ReactNode }) => {
+export const Paragraph = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
   return (
-    <p className={sectionParagraphsStyles.container__paragraph}>{children}</p>
+    <p
+      className={classNames(
+        sectionParagraphsStyles.container__paragraph,
+        className
+      )}>
+      {children}
+    </p>
   );
 };
 
