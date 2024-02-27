@@ -1,4 +1,4 @@
-import { GradientText } from "./GradientText/GradientText";
+import { GradientText } from "../GradientText/GradientText";
 import allQuestionsStyles from "./allQuestionsStyles.module.scss";
 import QuestionsList from "./QuestionsList/QuestionsList";
 import { ButtonLink, Buttons } from "../Buttons/Buttons";
@@ -13,7 +13,7 @@ export const AllQuestions = () => {
       <SectionHeader />
       <article className={allQuestionsStyles.article}>
         <div className={allQuestionsStyles.article__content}>
-          <GradientText />
+          <GradientText>All Your Questions Are Here</GradientText>
           <QuestionsList />
           <Buttons className={buttonsStyles["buttons--questions"]}>
             <ButtonLink title="Discover More" path={toMain()}></ButtonLink>

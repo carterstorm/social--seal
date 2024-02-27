@@ -10,6 +10,7 @@ import { GradientSection } from "../ui/GradientSection/GradientSection";
 import { WhatWeDo } from "../ui/WhatWeDo/WhatWeDo";
 import { ConsultationSection } from "../ui/ConsultationSection/ConsultationSection";
 import { PeopleSection } from "../ui/PeopleSection/PeopleSection";
+import { FaqSection } from "../ui/FaqSection/FaqSection";
 
 export default function MainPage() {
   return (
@@ -28,6 +29,7 @@ export default function MainPage() {
         <ConsultationSection />
         <PeopleSection />
       </GradientSection>
+      <FaqSection />
     </>
   );
 }

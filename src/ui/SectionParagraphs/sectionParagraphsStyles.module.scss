@@ -58,8 +58,16 @@
     text-align: center;
   }
 
+  &--faq {
+    margin-top: 18px;
+  }
+
   &__paragraph {
     margin: 0;
+
+    &--faq {
+      max-width: 468px;
+    }
 
     @media (max-width: $media976) {
       font-size: 16px;

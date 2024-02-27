@@ -1,0 +1,9 @@
+@import "/src/stylesVariables.scss";
+
+.moreQuestions {
+  @include desktopMaxWidth;
+  display: grid;
+  grid-template-columns: minmax(390px, 549px) minmax(450px, 1fr);
+  column-gap: 36px;
+  padding-bottom: 112px;
+}

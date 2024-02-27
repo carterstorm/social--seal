@@ -10,7 +10,7 @@ import SwiperPhoto2 from "/swiper_2.jpg";
 import SwiperPhoto3 from "/swiper_3.jpg";
 import SwiperPhoto4 from "/swiper_4.jpg";
 import SwiperPhoto5 from "/swiper_5.jpg";
-import { PersonType } from "./types";
+import { PersonType, QuestionData } from "./types";
 
 // ----------------- Hero -----------------
 
@@ -160,5 +160,34 @@ export const people: PersonType[] = [
     name: "Lindsey Schleifer",
     jobTitle: "CEO Kawasaki Inc.",
     personImage: "/person_3.png",
+  },
+];
+
+// ----------------- FAQ Data -----------------
+
+export const questions: QuestionData[] = [
+  {
+    id: 1,
+    questionText: `What's the difference between Pro and Free?`,
+    answerText: `Lorem ipsum dolor sit amet, sed nulla ante amet, elementum 
+    tincidunt arcu sed laoreet, natoque ac eget imperdiet.`,
+  },
+  {
+    id: 2,
+    questionText: `What's the difference between Client and Enterprise?`,
+    answerText: `lorem ipsum dolor sit amet, sed nulla ante amet, elementum`,
+  },
+  {
+    id: 3,
+    questionText: `What's the difference between Pro and Free?`,
+    answerText: `lorem ipsum dolor sit amet, sed nulla ante amet, elementum 
+    lorem dolor sit amet, sed nulla`,
+  },
+  {
+    id: 4,
+    questionText: `What's the difference between Pro and Free?`,
+    answerText: `Lorem  ante amet, elementum 
+    tincidunt arcu sed laoreet, natoque ac eget imperdiet. Ac scelerisque 
+    nibh dolores consectetuer,`,
   },
 ];
