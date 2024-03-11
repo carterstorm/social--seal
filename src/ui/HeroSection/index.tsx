@@ -1,5 +1,4 @@
 import buttonsStyles from "../Buttons/ButtonsStyles.module.scss";
-import heroSectionStyles from "./heroSectionStyles.module.scss";
 import { SocialButtons } from "../SocialButtons/SocialButtons";
 import { HeroSubTitle } from "./HeroSubTitle/HeroSubTitle";
 import { HeroHeading } from "./HeroHeading/HeroHeading";
@@ -11,9 +10,9 @@ import { HeroTabletContainer } from "./HeroTabletContainer/HeroTabletContainer";
 
 export function HeroSection() {
   return (
-    <section className={heroSectionStyles.hero}>
-      <article className={heroSectionStyles.hero__article}>
-        <div className={heroSectionStyles.content}>
+    <section>
+      <article>
+        <div>
           <HeroSubTitle />
           <HeroHeading />
           <HeroDesktopContainer>
