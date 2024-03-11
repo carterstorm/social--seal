@@ -15,7 +15,11 @@ export const FaqSection = () => {
     <section className={faqSectionStyles.moreQuestions}>
       <article className={faqSectionStyles.moreQuestions__article}>
         <div className={faqSectionStyles.content}>
-          <img src="/faq_image.png" alt="FAQ Image" style={{ width: "100%" }} />
+          <img
+            src={`${import.meta.env.VITE_APP_BASE_URL}/faq_image.png`}
+            alt="FAQ Image"
+            style={{ width: "100%" }}
+          />
           <SectionHeading className={sectionHeadingStyles["heading--faq"]}>
             All Your Questions Are Here
           </SectionHeading>

@@ -5,7 +5,7 @@ export const Person = ({ person }: { person: PersonType }) => {
   return (
     <li key={person.id} className={peopleSectionStyles.person}>
       <img
-        src={person.personImage}
+        src={`${import.meta.env.VITE_APP_BASE_URL}${person.personImage}`}
         alt={person.name}
         className={peopleSectionStyles.person__image}
       />

@@ -7,7 +7,7 @@ export const MonitoringImage = () => {
       <div className={monitoringImageStyles.image}>
         <div className={monitoringImageStyles.iconsContainer}>
           <img
-            src={`${process.env.REACT_APP_BASE_URL}ghost_icon.png`}
+            src={`${import.meta.env.VITE_APP_BASE_URL}ghost_icon.png`}
             alt="Ghost icon"
             className={classNames(
               monitoringImageStyles.icon,
@@ -15,7 +15,7 @@ export const MonitoringImage = () => {
             )}
           />
           <img
-            src="/circle_icon.png"
+            src={`${import.meta.env.VITE_APP_BASE_URL}circle_icon.png`}
             alt="Circle icon"
             className={classNames(
               monitoringImageStyles.icon,

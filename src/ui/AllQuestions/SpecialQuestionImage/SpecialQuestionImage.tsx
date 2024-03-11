@@ -5,7 +5,7 @@ export const SpecialQuestionImage = () => {
   return (
     <div className={specialQuestionImageStyles.specialContainer}>
       <img
-        src="/special_image_1.png"
+        src={`${import.meta.env.VITE_APP_BASE_URL}/special_image_1.png`}
         alt=""
         className={classNames(
           specialQuestionImageStyles.specialContainer__image,
@@ -13,7 +13,7 @@ export const SpecialQuestionImage = () => {
         )}
       />
       <img
-        src="/special_image_2.png"
+        src={`${import.meta.env.VITE_APP_BASE_URL}/special_image_2.png`}
         alt=""
         className={classNames(
           specialQuestionImageStyles.specialContainer__image,

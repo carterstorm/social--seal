@@ -4,5 +4,11 @@ type AnimatedShapeProps = {
 };
 
 export const AnimatedShape = ({ source, className }: AnimatedShapeProps) => {
-  return <img src={source} alt="Animated Shape" className={className} />;
+  return (
+    <img
+      src={`${import.meta.env.VITE_APP_BASE_URL}/${source}`}
+      alt="Animated Shape"
+      className={className}
+    />
+  );
 };

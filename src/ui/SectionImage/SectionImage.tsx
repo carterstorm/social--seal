@@ -6,5 +6,11 @@ type SectionImageProps = {
 };
 
 export const SectionImage = ({ source, alt }: SectionImageProps) => {
-  return <img src={source} alt={alt} className={sectionImageStyles.image} />;
+  return (
+    <img
+      src={`${import.meta.env.VITE_APP_BASE_URL}/${source}`}
+      alt={alt}
+      className={sectionImageStyles.image}
+    />
+  );
 };
