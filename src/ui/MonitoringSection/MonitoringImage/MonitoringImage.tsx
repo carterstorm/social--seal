@@ -7,7 +7,7 @@ export const MonitoringImage = () => {
       <div className={monitoringImageStyles.image}>
         <div className={monitoringImageStyles.iconsContainer}>
           <img
-            src="/ghost_icon.png"
+            src={`${process.env.REACT_APP_BASE_URL}ghost_icon.png`}
             alt="Ghost icon"
             className={classNames(
               monitoringImageStyles.icon,
